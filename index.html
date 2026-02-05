@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Tier Maker
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header id="top-header">
+      <img src="https://tiermaker.com/images/tiermaker-logo.png" alt="">
+    </header>
+    
+    <section class="tier">
+      <div class="row">
+        <aside class="label" style="--level: var(--color-s)">
+          <span contenteditable="true">S</span>
+        </aside>
+      </div>
+
+      <div class="row">
+        <aside class="label" style="--level: var(--color-a)">
+          <span contenteditable="true">A</span>
+        </aside>
+      </div>
+
+      <div class="row">
+        <aside class="label" style="--level: var(--color-b)">
+          <span contenteditable="true">B</span>
+        </aside>
+      </div>
+
+      <div class="row">
+        <aside class="label" style="--level: var(--color-c)">
+          <span contenteditable="true">C</span>
+        </aside>
+      </div>
+
+      <div class="row">
+        <aside class="label" style="--level: var(--color-d)">
+          <span contenteditable="true">D</span>
+        </aside>
+      </div>
+
+      <div class="row">
+        <aside class="label" style="--level: var(--color-e)">
+          <span contenteditable="true">E</span>
+        </aside>
+      </div>
+    </section>
+
+    <footer id="selector">
+      <section id="selector-buttons">
+        <!-- 
+          El label se usa como contenedor clickeable.
+          Al hacer clic en cualquier cosa dentro del label (en este caso el ícono),
+          se activa automáticamente el input de tipo file asociado.
+        -->
+        <label> 
+          <!-- 
+            Ícono SVG que funciona como botón visual.
+            El usuario cree que hace clic en un botón,
+            pero en realidad está activando el selector de archivos.
+          -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-plus">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+            <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+            <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+            <path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+            <path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+            <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+            <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+            <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+            <path d="M9 12h6" />
+            <path d="M12 9v6" />
+          </svg>
+          <!-- 
+            Input de tipo file que permite acceder al sistema de archivos del usuario.
+            Está oculto (hidden) para no mostrar el botón por defecto del navegador.
+            Se activa cuando el usuario hace clic en el label.
+          -->
+          <input multiple accept="image/*" id="image-input" type="file" hidden>
+        </label>
+
+
+        <button id="reset-tier-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rotate-clockwise">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5" />
+          </svg>
+        </button>
+
+        <button id="save-tier-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-device-floppy">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2" />
+            <path d="M10 14a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M14 4l0 4l-6 0l0 -4" />
+          </svg>
+        </button>
+      </section>
+
+      <section id="selector-items">
+
+      </section>
+    </footer>
+    
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
