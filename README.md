@@ -13,15 +13,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/alobuuls/tierlist-maker" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white" alt="Repository" />
-  </a>
-  <a href="https://github.com/alobuuls/tierlist-maker/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/alobuuls/tierlist-maker?style=social" alt="GitHub Stars" />
-  </a>
-  <a href="https://github.com/alobuuls/tierlist-maker/commits/main" target="_blank">
-    <img src="https://img.shields.io/github/last-commit/alobuuls/tierlist-maker" alt="Last Commit" />
-  </a>
+  <a href="https://github.com/alobuuls/tierlist-maker" target="_blank"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white" alt="Repository" /></a>
+  <a href="https://github.com/alobuuls/tierlist-maker/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/alobuuls/tierlist-maker?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/alobuuls/tierlist-maker/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/alobuuls/tierlist-maker" alt="Last Commit" /></a>
 </p>
 
 ---
